@@ -11,5 +11,13 @@
     <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/listView" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"/>
+            android:id="@+id/listView" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_above="@+id/bluetoothDiscovery"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth_discovery"
+            android:id="@+id/bluetoothDiscovery"
+            android:layout_alignParentBottom="true" android:layout_alignLeft="@+id/listView"
+            android:layout_alignRight="@+id/listView" android:onClick="startDiscovery"/>
 </RelativeLayout>

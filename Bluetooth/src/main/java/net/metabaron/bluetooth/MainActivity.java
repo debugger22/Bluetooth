@@ -2,11 +2,17 @@ package net.metabaron.bluetooth;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.app.Activity;
+import android.os.Handler;
 import android.view.Menu;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -51,7 +57,39 @@ public class MainActivity extends Activity {
                 dealBluetooth();
             }
         }
+
+        final Button button = (Button) findViewById(R.id.bluetoothDiscovery);
     }
+
+    public void startDiscovery(View view){
+        System.out.println("Discovery starting");
+        myBluetoothAdapter.startDiscovery();
+        // Register the BroadcastReceiver
+        IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
+        registerReceiver(mReceiver, filter); // Don't forget to unregister during onDestroy
+    }
+
+    // Create a BroadcastReceiver for ACTION_FOUND
+    private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+            // When discovery finds a device
+            if (BluetoothDevice.ACTION_FOUND.equals(action)) {
+                System.out.println("BT device found");
+                // Get the BluetoothDevice object from the Intent
+                BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+                // Add the name and address to an array adapter to show in a ListView
+                mArrayAdapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1);
+                mArrayAdapter.add(device.getName() + "\n" + device.getAddress());
+            }
+            if (mArrayAdapter.getCount() != 0) {
+                bluetoothListView.setAdapter(mArrayAdapter);
+            } else {
+                System.out.println("No devices discovered");
+            }
+            myBluetoothAdapter.cancelDiscovery();
+        }
+    };
 
     private void dealBluetooth() {
         System.out.println("Bluetooth ON = Good to go!");
@@ -90,4 +128,9 @@ public class MainActivity extends Activity {
         return true;
     }
 
+    @Override
+    public void onDestroy(){
+        myBluetoothAdapter.cancelDiscovery();
+        unregisterReceiver(mReceiver);
+    }
 }
