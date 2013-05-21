@@ -13,60 +13,9 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b3497c-20ef-4994-b7d6-df1b528b1bc5" name="Default" comment="First ever commit for Bluetooth.&#10;-Enable BT when needed&#10;-List for paired devices">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/libs/android-support-v4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/ic_launcher-web.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/drawable-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/drawable-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/drawable-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/drawable-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/drawable-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/drawable-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth-Bluetooth.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build/source/buildConfig/debug/net/metabaron/bluetooth/BuildConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build/source/r/debug/net/metabaron/bluetooth/R.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/layout/activity_main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/layout/activity_main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/values/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/values-sw600dp/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/values-sw720dp-land/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/menu/main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/menu/main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/values-v11/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/values-v14/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/values/values.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/values-sw720dp-land/values.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/values-v11/values.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/values-v14/values.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="50b3497c-20ef-4994-b7d6-df1b528b1bc5" name="Default" comment="" />
     <file path="/MainActivity.java" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369116641777" ignored="false" />
-    <file path="/Dummy.txt" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369119623337" ignored="false" />
+    <file path="/Dummy.txt" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369119660869" ignored="false" />
     <file path="/a.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369119114655" ignored="false" />
     <file path="/strings.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369117548530" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -589,12 +538,17 @@
       <changelist id="50b3497c-20ef-4994-b7d6-df1b528b1bc5" name="Default" comment="" />
       <created>1369105438759</created>
       <updated>1369105438759</updated>
-      <workItem from="1369105449985" duration="10972000" />
+      <workItem from="1369105449985" duration="10995000" />
     </task>
+    <task id="LOCAL-00001" summary="First ever commit for Bluetooth.&#10;-Enable BT when needed&#10;-List for paired devices">
+      <created>1369119668914</created>
+      <updated>1369119668914</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10972000" />
+    <option name="totallyTimeSpent" value="10995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -672,7 +626,7 @@
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
     <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
     <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />

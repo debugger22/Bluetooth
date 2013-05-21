@@ -1,0 +1,13 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1369105455365 24654 696bbbc63d2250ef7d3373f2d602e604acd13d8c C:\Users\Mathieu\AndroidStudioProjects\Bluetooth\Bluetooth\build\res\all\debug\drawable-xxhdpi\ic_launcher.png
+1369105455364 7721 39b0f5a0570da92f471225402ad0ea6de30bf2be C:\Users\Mathieu\AndroidStudioProjects\Bluetooth\Bluetooth\build\res\all\debug\drawable-hdpi\ic_launcher.png
+1369115011725 726 39d75cc7fadb63a0094ea8cfe3a252741f829ea7 C:\Users\Mathieu\AndroidStudioProjects\Bluetooth\Bluetooth\build\res\all\debug\layout\activity_main.xml
+1369105455388 210 c41731f5631a90fa989588ef97e9476fc244b438 C:\Users\Mathieu\AndroidStudioProjects\Bluetooth\Bluetooth\build\res\all\debug\values-v11\values.xml
+1369105455366 3769 eec07752d40e268ed7f4a1730acc77ab1e40aeb0 C:\Users\Mathieu\AndroidStudioProjects\Bluetooth\Bluetooth\build\res\all\debug\drawable-mdpi\ic_launcher.png
+1369105455390 130 90e37035f35f83953c491e73e930b7aea297a472 C:\Users\Mathieu\AndroidStudioProjects\Bluetooth\Bluetooth\build\res\all\debug\values-sw720dp-land\values.xml
+1369105455364 244 045ff451db7cd8e61285502b8c9bbf7405f2078d C:\Users\Mathieu\AndroidStudioProjects\Bluetooth\Bluetooth\build\res\all\debug\menu\main.xml
+1369105455383 807 ad374a6c490be4fa159f3e0a4cdf627073e4d11e C:\Users\Mathieu\AndroidStudioProjects\Bluetooth\Bluetooth\build\res\all\debug\values\values.xml
+1369105455364 12329 a8301606e15d4b6dccdd775cc273cfc51a552645 C:\Users\Mathieu\AndroidStudioProjects\Bluetooth\Bluetooth\build\res\all\debug\drawable-xhdpi\ic_launcher.png
+1369105455386 224 3bee0d9a6f0efbaf11495ad45fdeb8f71aee62e8 C:\Users\Mathieu\AndroidStudioProjects\Bluetooth\Bluetooth\build\res\all\debug\values-v14\values.xml
