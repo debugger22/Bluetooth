@@ -130,6 +130,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onDestroy(){
+        super.onDestroy();
         myBluetoothAdapter.cancelDiscovery();
         unregisterReceiver(mReceiver);
     }

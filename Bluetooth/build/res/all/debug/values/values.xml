@@ -7,7 +7,6 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">Bluetooth</string>
     <string name="bluetooth_discovery">        Bluetooth Discovery</string>
-    <string name="hello_world">Hello world!</string>
 
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
