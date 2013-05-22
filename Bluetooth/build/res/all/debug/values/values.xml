@@ -4,9 +4,19 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <string name="BTAdapterDetected">Bluetooth adapter detected</string>
+    <string name="BTAdapterOn">Bluetooth adapter is on</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">Bluetooth</string>
     <string name="bluetooth_discovery">        Bluetooth Discovery</string>
+    <string name="deviceFound">Bluetooth device found</string>
+    <string name="disablingBluetooth">You disabled Bluetooth</string>
+    <string name="discoveryStarted">Discovery started</string>
+    <string name="enabledBluetooth">You enabled Bluetooth</string>
+    <string name="enablingBTAdapter">Enabling Bluetooth adapter</string>
+    <string name="listBluetoothDEvices">List of Bluetooth devices linked</string>
+    <string name="noBTAdapterDetected">No Bluetooth adapter detected</string>
+    <string name="noDeviceDiscovered">No device discovered</string>
 
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

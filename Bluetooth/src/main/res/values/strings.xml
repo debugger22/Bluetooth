@@ -5,8 +5,16 @@
     </string>
     <string name="action_settings">Settings
     </string>
-    <string name="bluetooth_discovery">
-        Bluetooth Discovery
+    <string name="bluetooth_discovery">Bluetooth Discovery
     </string>
-
+    <string name="listBluetoothDEvices">List of Bluetooth devices linked</string>
+    <string name="noBTAdapterDetected">No Bluetooth adapter detected</string>
+    <string name="BTAdapterDetected">Bluetooth adapter detected</string>
+    <string name="enablingBTAdapter">Enabling Bluetooth adapter</string>
+    <string name="BTAdapterOn">Bluetooth adapter is on</string>
+    <string name="discoveryStarted">Discovery started</string>
+    <string name="deviceFound">Bluetooth device found</string>
+    <string name="noDeviceDiscovered">No device discovered</string>
+    <string name="disablingBluetooth">You disabled Bluetooth</string>
+    <string name="enabledBluetooth">You enabled Bluetooth</string>
 </resources>

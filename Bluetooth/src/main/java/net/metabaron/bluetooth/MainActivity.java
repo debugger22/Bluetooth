@@ -8,14 +8,13 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.app.Activity;
-import android.os.Handler;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
-import java.util.ArrayList;
 import java.util.Set;
 
 public class MainActivity extends Activity {
@@ -34,6 +33,7 @@ public class MainActivity extends Activity {
 
     private ArrayAdapter<String> mArrayAdapter;
     private ListView bluetoothListView;
+    private TextView description;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,44 +41,50 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         bluetoothListView = (ListView) findViewById(R.id.listView);
+        description = (TextView) findViewById((R.id.textView));
 
-        //Bluethooth
+        /* Initialize Bluetooth adapter */
         myBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if (myBluetoothAdapter == null) {
-            System.out.println("No Bluetooth");
+            System.out.println("No Bluetooth Adapter");
+            description.setText(getString(R.string.noBTAdapterDetected));
         } else {
             System.out.println("Bluetooth");
+            description.setText(getString(R.string.BTAdapterDetected));
             if (!myBluetoothAdapter.isEnabled()) {
-                System.out.println("No Bluetooth Adapter");
+                System.out.println("Bluetooth Adapter off");
+                description.setText(getString(R.string.enablingBTAdapter));
                 Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
                 startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+                dealBluetooth();
             } else {
-                System.out.println("Bluetooth Adapter");
+                System.out.println("Bluetooth adapter is on");
+                description.setText(getString(R.string.BTAdapterOn));
                 dealBluetooth();
             }
         }
-
-        final Button button = (Button) findViewById(R.id.bluetoothDiscovery);
     }
 
+    /* Discover new devices */
     public void startDiscovery(View view){
         System.out.println("Discovery starting");
+        description.setText(getString(R.string.discoveryStarted));
         myBluetoothAdapter.startDiscovery();
-        // Register the BroadcastReceiver
+        /* Register the BroadcastReceiver */
         IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
-        registerReceiver(mReceiver, filter); // Don't forget to unregister during onDestroy
+        registerReceiver(mReceiver, filter);
     }
 
-    // Create a BroadcastReceiver for ACTION_FOUND
+    /* Create a BroadcastReceiver for ACTION_FOUND */
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
-            // When discovery finds a device
+            /* When discovery finds a device */
             if (BluetoothDevice.ACTION_FOUND.equals(action)) {
                 System.out.println("BT device found");
-                // Get the BluetoothDevice object from the Intent
+                description.setText(getString(R.string.deviceFound));
+                /* Get the BluetoothDevice object from the Intent */
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                // Add the name and address to an array adapter to show in a ListView
                 mArrayAdapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1);
                 mArrayAdapter.add(device.getName() + "\n" + device.getAddress());
             }
@@ -86,18 +92,19 @@ public class MainActivity extends Activity {
                 bluetoothListView.setAdapter(mArrayAdapter);
             } else {
                 System.out.println("No devices discovered");
+                description.setText(getString(R.string.noDeviceDiscovered));
             }
             myBluetoothAdapter.cancelDiscovery();
         }
     };
 
+    /* Click on button to discover new devices */
     private void dealBluetooth() {
         System.out.println("Bluetooth ON = Good to go!");
         Set<BluetoothDevice> pairedDevices = myBluetoothAdapter.getBondedDevices();
         if (pairedDevices.size() > 0) {
-            // Loop through paired devices
+            /* Loop through paired devices */
             for (BluetoothDevice device : pairedDevices) {
-                // Add the name and address to an array adapter to show in a ListView
                 System.out.println(device.getAddress());
                 mArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
                 mArrayAdapter.add(device.getName() + "\n" + device.getAddress());
@@ -106,6 +113,7 @@ public class MainActivity extends Activity {
                 bluetoothListView.setAdapter(mArrayAdapter);
             } else {
                 System.out.println("No devices discovered");
+                description.setText(getString(R.string.noDeviceDiscovered));
             }
         }
     }
@@ -114,9 +122,11 @@ public class MainActivity extends Activity {
         if (requestCode == REQUEST_ENABLE_BT) {
             if (resultCode == RESULT_OK) {
                 System.out.println("User enabled Bluetooth");
+                description.setText(getString(R.string.enabledBluetooth));
                 dealBluetooth();
             } else if (resultCode == RESULT_CANCELED) {
-                System.out.println("User do not enabled Bluetooth");
+                System.out.println("User disabled Bluetooth");
+                description.setText(getString(R.string.disablingBluetooth));
             }
         }
     }
@@ -132,6 +142,10 @@ public class MainActivity extends Activity {
     public void onDestroy(){
         super.onDestroy();
         myBluetoothAdapter.cancelDiscovery();
-        unregisterReceiver(mReceiver);
+        try{
+            unregisterReceiver(mReceiver);
+        }catch(IllegalArgumentException e){
+            System.out.println("No registered");
+        }
     }
 }
