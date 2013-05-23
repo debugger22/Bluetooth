@@ -37,12 +37,13 @@ public final class R {
         public static final int bluetooth_discovery=0x7f050004;
         public static final int deviceFound=0x7f050005;
         public static final int disablingBluetooth=0x7f050006;
-        public static final int discoveryStarted=0x7f050007;
-        public static final int enabledBluetooth=0x7f050008;
-        public static final int enablingBTAdapter=0x7f050009;
-        public static final int listBluetoothDEvices=0x7f05000a;
-        public static final int noBTAdapterDetected=0x7f05000b;
-        public static final int noDeviceDiscovered=0x7f05000c;
+        public static final int discoveryFinished=0x7f050007;
+        public static final int discoveryStarted=0x7f050008;
+        public static final int enabledBluetooth=0x7f050009;
+        public static final int enablingBTAdapter=0x7f05000a;
+        public static final int listBluetoothDEvices=0x7f05000b;
+        public static final int noBTAdapterDetected=0x7f05000c;
+        public static final int noDeviceDiscovered=0x7f05000d;
     }
     public static final class style {
         /** 

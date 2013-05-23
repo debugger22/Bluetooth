@@ -11,6 +11,7 @@
     <string name="bluetooth_discovery">Bluetooth Discovery</string>
     <string name="deviceFound">Bluetooth device found</string>
     <string name="disablingBluetooth">You disabled Bluetooth</string>
+    <string name="discoveryFinished">Discovery finished</string>
     <string name="discoveryStarted">Discovery started</string>
     <string name="enabledBluetooth">You enabled Bluetooth</string>
     <string name="enablingBTAdapter">Enabling Bluetooth adapter</string>

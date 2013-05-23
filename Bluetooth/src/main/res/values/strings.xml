@@ -17,4 +17,5 @@
     <string name="noDeviceDiscovered">No device discovered</string>
     <string name="disablingBluetooth">You disabled Bluetooth</string>
     <string name="enabledBluetooth">You enabled Bluetooth</string>
+    <string name="discoveryFinished">Discovery finished</string>
 </resources>

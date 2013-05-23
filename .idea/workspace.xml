@@ -9,18 +9,30 @@
   </component>
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <target>android-17</target>
+      </config>
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/Bluetooth/src/main/res/layout/activity_main.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50b3497c-20ef-4994-b7d6-df1b528b1bc5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/ConnectThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java" afterPath="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bluetooth/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bluetooth/build/source/r/debug/net/metabaron/bluetooth/R.java" afterPath="$PROJECT_DIR$/Bluetooth/build/source/r/debug/net/metabaron/bluetooth/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bluetooth/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <file path="/MainActivity.java" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369288438779" ignored="false" />
-    <file path="/Dummy.txt" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369285567275" ignored="false" />
+    <file path="/MainActivity.java" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369298139268" ignored="false" />
+    <file path="/Dummy.txt" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369288530444" ignored="false" />
     <file path="/a.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369119114655" ignored="false" />
     <file path="/strings.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369195353722" ignored="false" />
     <file path="$PROJECT_DIR$/Bluetooth/build/res/all/debug/values-sw720dp-land/values.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369120163362" ignored="false" />
@@ -28,7 +40,7 @@
     <file path="$PROJECT_DIR$/Bluetooth/build/res/all/debug/values-v11/values.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369120163362" ignored="false" />
     <file path="$PROJECT_DIR$/Bluetooth/build/res/all/debug/menu/main.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369120163362" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369121742255" ignored="false" />
-    <file path="/ConnectThread.java" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369194979440" ignored="false" />
+    <file path="/ConnectThread.java" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369298024598" ignored="false" />
     <file path="/a.dummy" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369201206783" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,23 +105,35 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="53" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.5882353">
+            <state line="80" column="27" selection-start="3095" selection-end="3095" vertical-scroll-proportion="0.43387815">
               <folding>
-                <element signature="e#1499#1538#0" expanded="true" />
-                <element signature="e#1635#1672#0" expanded="true" />
-                <element signature="e#1823#1860#0" expanded="true" />
-                <element signature="e#2183#2214#0" expanded="true" />
-                <element signature="e#2419#2654#0" expanded="true" />
-                <element signature="e#2643#2644#0" expanded="true" />
-                <element signature="e#2848#2884#0" expanded="true" />
-                <element signature="e#3217#4204#0" expanded="true" />
-                <element signature="e#3557#3588#0" expanded="true" />
-                <element signature="e#4082#4120#0" expanded="true" />
-                <element signature="e#4197#4198#0" expanded="true" />
-                <element signature="e#4943#4981#0" expanded="true" />
-                <element signature="e#5326#5362#0" expanded="true" />
-                <element signature="e#5553#5591#0" expanded="true" />
-                <element signature="e#5630#5668#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1647#1686#0" expanded="true" />
+                <element signature="e#1783#1820#0" expanded="true" />
+                <element signature="e#1971#2008#0" expanded="true" />
+                <element signature="e#2331#2362#0" expanded="true" />
+                <element signature="e#2567#3119#0" expanded="true" />
+                <element signature="e#3108#3109#0" expanded="true" />
+                <element signature="e#3442#3478#0" expanded="true" />
+                <element signature="e#3980#5185#0" expanded="true" />
+                <element signature="e#4320#4351#0" expanded="true" />
+                <element signature="e#5063#5101#0" expanded="true" />
+                <element signature="e#5178#5179#0" expanded="true" />
+                <element signature="e#5981#6019#0" expanded="true" />
+                <element signature="e#6364#6400#0" expanded="true" />
+                <element signature="e#6591#6629#0" expanded="true" />
+                <element signature="e#6668#6706#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectThread.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/ConnectThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="9" selection-start="1637" selection-end="1637" vertical-scroll-proportion="-30.076923">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,10 +179,10 @@
         <option value="$PROJECT_DIR$/Bluetooth/src/main/res/layout/rowTextView.xml" />
         <option value="$PROJECT_DIR$/Bluetooth/src/main/res/layout/simplerow.xml" />
         <option value="$PROJECT_DIR$/Bluetooth/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/ConnectThread.java" />
         <option value="$PROJECT_DIR$/Bluetooth/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/Bluetooth/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java" />
+        <option value="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/ConnectThread.java" />
       </list>
     </option>
   </component>
@@ -556,7 +580,7 @@
       <workItem from="1369192668025" duration="6355000" />
       <workItem from="1369212965524" duration="640000" />
       <workItem from="1369213618034" duration="125000" />
-      <workItem from="1369280105122" duration="8345000" />
+      <workItem from="1369280105122" duration="17854000" />
     </task>
     <task id="LOCAL-00001" summary="First ever commit for Bluetooth.&#10;-Enable BT when needed&#10;-List for paired devices">
       <created>1369119668914</created>
@@ -574,18 +598,22 @@
       <created>1369285575993</created>
       <updated>1369285575993</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Support to disable button when not available.&#10;When multiple BT devices are detected, they will be display in the liste (previously, only one was shown)">
+      <created>1369288535332</created>
+      <updated>1369288535332</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30977000" />
+    <option name="totallyTimeSpent" value="40486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22838847" sideWeight="0.6908691" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6908691" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22838847" sideWeight="0.78657866" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.78657866" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3091309" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -599,8 +627,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.78657866" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21342134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.79757977" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20242023" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2801494" sideWeight="0.78547853" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -652,7 +680,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dealing with click on an item" />
+    <option name="LAST_COMMIT_MESSAGE" value="Support to disable button when not available.&#10;When multiple BT devices are detected, they will be display in the liste (previously, only one was shown)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -671,6 +699,7 @@
     <MESSAGE value="Solved an error in &quot;onDestroy&quot;" />
     <MESSAGE value="Resolved small bugs and added message on top so that user knows what is happening." />
     <MESSAGE value="Dealing with click on an item" />
+    <MESSAGE value="Support to disable button when not available.&#10;When multiple BT devices are detected, they will be display in the liste (previously, only one was shown)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -678,46 +707,24 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="0" selection-start="5294" selection-end="5294" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1499#1538#0" expanded="true" />
-            <element signature="e#1635#1672#0" expanded="true" />
-            <element signature="e#1823#1860#0" expanded="true" />
-            <element signature="e#2183#2214#0" expanded="true" />
-            <element signature="e#2419#2654#0" expanded="true" />
-            <element signature="e#2643#2644#0" expanded="true" />
-            <element signature="e#2848#2884#0" expanded="true" />
-            <element signature="e#3217#4204#0" expanded="true" />
-            <element signature="e#3557#3588#0" expanded="true" />
-            <element signature="e#4082#4120#0" expanded="true" />
-            <element signature="e#4197#4198#0" expanded="true" />
-            <element signature="e#4943#4981#0" expanded="true" />
-            <element signature="e#5326#5362#0" expanded="true" />
-            <element signature="e#5553#5591#0" expanded="true" />
-            <element signature="e#5630#5668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="132" column="45" selection-start="4940" selection-end="4940" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#1499#1538#0" expanded="true" />
-            <element signature="e#1635#1672#0" expanded="true" />
-            <element signature="e#1823#1860#0" expanded="true" />
-            <element signature="e#2183#2214#0" expanded="true" />
-            <element signature="e#2419#2654#0" expanded="true" />
-            <element signature="e#2643#2644#0" expanded="true" />
-            <element signature="e#2848#2884#0" expanded="true" />
-            <element signature="e#3217#4204#0" expanded="true" />
-            <element signature="e#3557#3588#0" expanded="true" />
-            <element signature="e#4082#4120#0" expanded="true" />
-            <element signature="e#4197#4198#0" expanded="true" />
-            <element signature="e#4943#4981#0" expanded="true" />
-            <element signature="e#5326#5362#0" expanded="true" />
-            <element signature="e#5553#5591#0" expanded="true" />
-            <element signature="e#5630#5668#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1647#1686#0" expanded="true" />
+            <element signature="e#1783#1820#0" expanded="true" />
+            <element signature="e#1971#2008#0" expanded="true" />
+            <element signature="e#2331#2362#0" expanded="true" />
+            <element signature="e#2567#3119#0" expanded="true" />
+            <element signature="e#3108#3109#0" expanded="true" />
+            <element signature="e#3442#3478#0" expanded="true" />
+            <element signature="e#3980#5185#0" expanded="true" />
+            <element signature="e#4320#4351#0" expanded="true" />
+            <element signature="e#5063#5101#0" expanded="true" />
+            <element signature="e#5178#5179#0" expanded="true" />
+            <element signature="e#5981#6019#0" expanded="true" />
+            <element signature="e#6364#6400#0" expanded="true" />
+            <element signature="e#6591#6629#0" expanded="true" />
+            <element signature="e#6668#6706#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -811,25 +818,35 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/ConnectThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="9" selection-start="1637" selection-end="1637" vertical-scroll-proportion="-30.076923">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="53" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.5882353">
+        <state line="80" column="27" selection-start="3095" selection-end="3095" vertical-scroll-proportion="0.43387815">
           <folding>
-            <element signature="e#1499#1538#0" expanded="true" />
-            <element signature="e#1635#1672#0" expanded="true" />
-            <element signature="e#1823#1860#0" expanded="true" />
-            <element signature="e#2183#2214#0" expanded="true" />
-            <element signature="e#2419#2654#0" expanded="true" />
-            <element signature="e#2643#2644#0" expanded="true" />
-            <element signature="e#2848#2884#0" expanded="true" />
-            <element signature="e#3217#4204#0" expanded="true" />
-            <element signature="e#3557#3588#0" expanded="true" />
-            <element signature="e#4082#4120#0" expanded="true" />
-            <element signature="e#4197#4198#0" expanded="true" />
-            <element signature="e#4943#4981#0" expanded="true" />
-            <element signature="e#5326#5362#0" expanded="true" />
-            <element signature="e#5553#5591#0" expanded="true" />
-            <element signature="e#5630#5668#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1647#1686#0" expanded="true" />
+            <element signature="e#1783#1820#0" expanded="true" />
+            <element signature="e#1971#2008#0" expanded="true" />
+            <element signature="e#2331#2362#0" expanded="true" />
+            <element signature="e#2567#3119#0" expanded="true" />
+            <element signature="e#3108#3109#0" expanded="true" />
+            <element signature="e#3442#3478#0" expanded="true" />
+            <element signature="e#3980#5185#0" expanded="true" />
+            <element signature="e#4320#4351#0" expanded="true" />
+            <element signature="e#5063#5101#0" expanded="true" />
+            <element signature="e#5178#5179#0" expanded="true" />
+            <element signature="e#5981#6019#0" expanded="true" />
+            <element signature="e#6364#6400#0" expanded="true" />
+            <element signature="e#6591#6629#0" expanded="true" />
+            <element signature="e#6668#6706#0" expanded="true" />
           </folding>
         </state>
       </provider>

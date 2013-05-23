@@ -16,7 +16,7 @@ import java.util.Set;
 
 public class MainActivity extends Activity {
 
-    protected BluetoothAdapter myBluetoothAdapter;
+    public BluetoothAdapter myBluetoothAdapter;
 
     {
         myBluetoothAdapter = null;
@@ -33,6 +33,9 @@ public class MainActivity extends Activity {
     private ListView bluetoothListView;
     private TextView description;
     private Button BTDiscovery;
+    //public static ArrayList<Object> NewDeviceList;
+    private BluetoothDevice[] myBTDevices = new BluetoothDevice[2];
+    private int position = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +74,11 @@ public class MainActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 System.out.println("Item clicked: " + i);
+                System.out.println("Item name: " + myBTDevices[i].getName());
+                System.out.println("Item UUID: " + myBTDevices[i].getClass());
+                System.out.println("");
+                ConnectThread temp = new ConnectThread(myBTDevices[i], myBluetoothAdapter);
+                temp.run();
             }
         });
     }
@@ -79,12 +87,17 @@ public class MainActivity extends Activity {
     Discover new devices when clicked on button
      */
     public void startDiscovery(View view){
+        mArrayAdapter.clear();
+        if (myBluetoothAdapter.isDiscovering())
+            myBluetoothAdapter.cancelDiscovery();
         System.out.println("Discovery starting");
         description.setText(getString(R.string.discoveryStarted));
         myBluetoothAdapter.startDiscovery();
         /* Register the BroadcastReceiver */
-        IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
-        registerReceiver(mReceiver, filter);
+        IntentFilter actionFound = new IntentFilter(BluetoothDevice.ACTION_FOUND);
+        registerReceiver(mReceiver, actionFound);
+        IntentFilter discoveryFinished = new IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
+        registerReceiver(mReceiver, discoveryFinished);
     }
 
     /*
@@ -100,7 +113,11 @@ public class MainActivity extends Activity {
                 /* Get the BluetoothDevice object from the Intent */
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
                 mArrayAdapter.add(device.getName() + "\n" + device.getAddress());
-            }
+                myBTDevices[position] = device;
+                position++;
+            }/* else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action)) {
+                myBluetoothAdapter.cancelDiscovery();
+            }*/
             if (mArrayAdapter.getCount() != 0) {
                 bluetoothListView.setAdapter(mArrayAdapter);
             } else {
@@ -111,7 +128,10 @@ public class MainActivity extends Activity {
         }
     };
 
-    /* Display paired devices */
+    /*
+    Display paired devices
+    NEED TO ADD PAIRED DEVICES TO A LIST OBJECT
+     */
     private void dealBluetooth() {
         System.out.println("Bluetooth ON = Good to go!");
         Set<BluetoothDevice> pairedDevices = myBluetoothAdapter.getBondedDevices();
