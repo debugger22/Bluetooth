@@ -19,7 +19,8 @@
             android:text="@string/bluetooth_discovery"
             android:id="@+id/bluetoothDiscovery"
             android:layout_alignParentBottom="true" android:layout_alignLeft="@+id/listView"
-            android:layout_alignRight="@+id/listView" android:onClick="startDiscovery"/>
+            android:layout_alignRight="@+id/listView" android:onClick="startDiscovery" android:clickable="true"
+            android:enabled="false"/>
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

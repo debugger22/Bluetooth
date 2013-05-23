@@ -29,8 +29,10 @@ public class MainActivity extends Activity {
     }
 
     private ArrayAdapter<String> mArrayAdapter;
+
     private ListView bluetoothListView;
     private TextView description;
+    private Button BTDiscovery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +40,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         bluetoothListView = (ListView) findViewById(R.id.listView);
-        description = (TextView) findViewById((R.id.textView));
+        description = (TextView) findViewById(R.id.textView);
+        BTDiscovery = (Button) findViewById(R.id.bluetoothDiscovery);
+        mArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
 
         /* Initialize Bluetooth adapter */
         myBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
@@ -57,10 +61,12 @@ public class MainActivity extends Activity {
             } else {
                 System.out.println("Bluetooth adapter is on");
                 description.setText(getString(R.string.BTAdapterOn));
+                BTDiscovery.setEnabled(true);
                 dealBluetooth();
             }
         }
 
+        //When clicking on one of the list entry
         bluetoothListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -69,7 +75,9 @@ public class MainActivity extends Activity {
         });
     }
 
-    /* Discover new devices */
+    /*
+    Discover new devices when clicked on button
+     */
     public void startDiscovery(View view){
         System.out.println("Discovery starting");
         description.setText(getString(R.string.discoveryStarted));
@@ -79,7 +87,9 @@ public class MainActivity extends Activity {
         registerReceiver(mReceiver, filter);
     }
 
-    /* Create a BroadcastReceiver for ACTION_FOUND */
+    /*
+    Create a BroadcastReceiver for ACTION_FOUND
+    */
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
@@ -89,7 +99,6 @@ public class MainActivity extends Activity {
                 description.setText(getString(R.string.deviceFound));
                 /* Get the BluetoothDevice object from the Intent */
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                mArrayAdapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1);
                 mArrayAdapter.add(device.getName() + "\n" + device.getAddress());
             }
             if (mArrayAdapter.getCount() != 0) {
@@ -98,11 +107,11 @@ public class MainActivity extends Activity {
                 System.out.println("No devices discovered");
                 description.setText(getString(R.string.noDeviceDiscovered));
             }
-            myBluetoothAdapter.cancelDiscovery();
+            //myBluetoothAdapter.cancelDiscovery();
         }
     };
 
-    /* Click on button to discover new devices */
+    /* Display paired devices */
     private void dealBluetooth() {
         System.out.println("Bluetooth ON = Good to go!");
         Set<BluetoothDevice> pairedDevices = myBluetoothAdapter.getBondedDevices();
@@ -110,7 +119,6 @@ public class MainActivity extends Activity {
             /* Loop through paired devices */
             for (BluetoothDevice device : pairedDevices) {
                 System.out.println(device.getAddress());
-                mArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
                 mArrayAdapter.add(device.getName() + "\n" + device.getAddress());
             }
             if (mArrayAdapter.getCount() != 0) {
@@ -120,6 +128,7 @@ public class MainActivity extends Activity {
                 description.setText(getString(R.string.noDeviceDiscovered));
             }
         }
+        BTDiscovery.setEnabled(true);
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -131,6 +140,8 @@ public class MainActivity extends Activity {
             } else if (resultCode == RESULT_CANCELED) {
                 System.out.println("User disabled Bluetooth");
                 description.setText(getString(R.string.disablingBluetooth));
+                description.setText(getString(R.string.disablingBluetooth));
+                BTDiscovery.setEnabled(false);
             }
         }
     }
