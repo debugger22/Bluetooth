@@ -10,10 +10,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ListView;
-import android.widget.TextView;
+import android.widget.*;
 
 import java.util.Set;
 
@@ -63,6 +60,13 @@ public class MainActivity extends Activity {
                 dealBluetooth();
             }
         }
+
+        bluetoothListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                System.out.println("Item clicked: " + i);
+            }
+        });
     }
 
     /* Discover new devices */
