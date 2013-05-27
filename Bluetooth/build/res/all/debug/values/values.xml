@@ -18,6 +18,7 @@
     <string name="listBluetoothDEvices">List of Bluetooth devices linked</string>
     <string name="noBTAdapterDetected">No Bluetooth adapter detected</string>
     <string name="noDeviceDiscovered">No device discovered</string>
+    <string name="runningPairing">Running pairing</string>
 
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

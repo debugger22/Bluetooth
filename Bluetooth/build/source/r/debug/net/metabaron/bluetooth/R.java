@@ -44,6 +44,7 @@ public final class R {
         public static final int listBluetoothDEvices=0x7f05000b;
         public static final int noBTAdapterDetected=0x7f05000c;
         public static final int noDeviceDiscovered=0x7f05000d;
+        public static final int runningPairing=0x7f05000e;
     }
     public static final class style {
         /** 

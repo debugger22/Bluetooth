@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.app.Activity;
+import android.os.Parcelable;
 import android.view.Menu;
 import android.view.View;
 import android.widget.*;
@@ -34,7 +35,7 @@ public class MainActivity extends Activity {
     private TextView description;
     private Button BTDiscovery;
     //public static ArrayList<Object> NewDeviceList;
-    private BluetoothDevice[] myBTDevices = new BluetoothDevice[2];
+    private BluetoothDevice[] myBTDevices = new BluetoothDevice[5];
     private int position = 0;
 
     @Override
@@ -72,13 +73,18 @@ public class MainActivity extends Activity {
         //When clicking on one of the list entry
         bluetoothListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, final int i, long l) {
                 System.out.println("Item clicked: " + i);
-                System.out.println("Item name: " + myBTDevices[i].getName());
-                System.out.println("Item UUID: " + myBTDevices[i].getClass());
-                System.out.println("");
-                ConnectThread temp = new ConnectThread(myBTDevices[i], myBluetoothAdapter);
-                temp.run();
+                myBTDevices[i].fetchUuidsWithSdp();
+                myBluetoothAdapter.cancelDiscovery();
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        System.out.println("Running pairing");
+                        final ConnectThread temp = new ConnectThread(myBTDevices[i], myBluetoothAdapter);
+                        temp.run();
+                    }
+                }).start();
             }
         });
     }
@@ -96,6 +102,10 @@ public class MainActivity extends Activity {
         /* Register the BroadcastReceiver */
         IntentFilter actionFound = new IntentFilter(BluetoothDevice.ACTION_FOUND);
         registerReceiver(mReceiver, actionFound);
+
+        IntentFilter actionFound2 = new IntentFilter(BluetoothDevice.ACTION_UUID);
+        registerReceiver(mReceiver, actionFound2);
+
         IntentFilter discoveryFinished = new IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
         registerReceiver(mReceiver, discoveryFinished);
     }
@@ -108,13 +118,17 @@ public class MainActivity extends Activity {
             String action = intent.getAction();
             /* When discovery finds a device */
             if (BluetoothDevice.ACTION_FOUND.equals(action)) {
-                System.out.println("BT device found");
                 description.setText(getString(R.string.deviceFound));
                 /* Get the BluetoothDevice object from the Intent */
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                mArrayAdapter.add(device.getName() + "\n" + device.getAddress());
-                myBTDevices[position] = device;
-                position++;
+                try{
+                    mArrayAdapter.add(device.getName() + "\n" + device.getAddress());
+                    System.out.println("BT device found: " + device.getName() + "\n" + device.getAddress());
+                    myBTDevices[position] = device;
+                    position++;
+                }catch (NullPointerException e){
+                    System.out.println("Value: " + device.toString());
+                }
             }/* else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action)) {
                 myBluetoothAdapter.cancelDiscovery();
             }*/
