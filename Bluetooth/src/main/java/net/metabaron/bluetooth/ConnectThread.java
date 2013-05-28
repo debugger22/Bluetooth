@@ -5,8 +5,10 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.util.Log;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.UUID;
 
 /**
@@ -58,13 +60,20 @@ public class ConnectThread {
         InputStream bis = null;
         try{
             bis = mmSocket.getInputStream();
-            byte[] buffer = new byte[4096];
+            /*byte[] buffer = new byte[4096];
             int read = bis.read(buffer, 0, 4096);
             while (read != -1) {
                 byte[] tempdata = new byte[read];
                 System.arraycopy(buffer, 0, tempdata, 0, read);
                 System.out.println(new String(tempdata));
                 read = bis.read(buffer, 0, 4096); // This is blocking
+            }*/
+            BufferedReader buffer = new BufferedReader(new InputStreamReader(bis));
+            StringBuilder total = new StringBuilder();
+            String line;
+            while ((line = buffer.readLine()) != null) {
+                total.append(line);
+                System.out.println(total);
             }
         }catch (IOException e){
             System.out.println("Error: " + e.toString());
