@@ -17,20 +17,9 @@ import java.util.Set;
 
 public class MainActivity extends Activity {
 
-    public BluetoothAdapter myBluetoothAdapter;
-
-    {
-        myBluetoothAdapter = null;
-    }
-
-    protected int REQUEST_ENABLE_BT;
-
-    {
-        REQUEST_ENABLE_BT = 1;
-    }
-
+    public BluetoothAdapter myBluetoothAdapter = null;
+    protected int REQUEST_ENABLE_BT = 1;
     private ArrayAdapter<String> mArrayAdapter;
-
     private ListView bluetoothListView;
     private TextView description;
     private Button BTDiscovery;

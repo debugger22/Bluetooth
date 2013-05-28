@@ -26,13 +26,10 @@
     <list default="true" id="50b3497c-20ef-4994-b7d6-df1b528b1bc5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/ConnectThread.java" afterPath="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/ConnectThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java" afterPath="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bluetooth/build/source/r/debug/net/metabaron/bluetooth/R.java" afterPath="$PROJECT_DIR$/Bluetooth/build/source/r/debug/net/metabaron/bluetooth/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bluetooth/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Bluetooth/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/Bluetooth/build/res/all/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <file path="/MainActivity.java" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369633431804" ignored="false" />
-    <file path="/Dummy.txt" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369621144489" ignored="false" />
+    <file path="/MainActivity.java" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369641193163" ignored="false" />
+    <file path="/Dummy.txt" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369705127836" ignored="false" />
     <file path="/a.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369119114655" ignored="false" />
     <file path="/strings.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369195353722" ignored="false" />
     <file path="$PROJECT_DIR$/Bluetooth/build/res/all/debug/values-sw720dp-land/values.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369120163362" ignored="false" />
@@ -40,7 +37,7 @@
     <file path="$PROJECT_DIR$/Bluetooth/build/res/all/debug/values-v11/values.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369120163362" ignored="false" />
     <file path="$PROJECT_DIR$/Bluetooth/build/res/all/debug/menu/main.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369120163362" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369121742255" ignored="false" />
-    <file path="/ConnectThread.java" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369631680615" ignored="false" />
+    <file path="/ConnectThread.java" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369706437489" ignored="false" />
     <file path="/a.dummy" changelist="50b3497c-20ef-4994-b7d6-df1b528b1bc5" time="1369201206783" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +58,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -98,6 +94,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -107,37 +104,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="15" selection-start="5389" selection-end="5389" vertical-scroll-proportion="0.45468053">
-              <folding>
-                <element signature="e#1677#1716#0" expanded="true" />
-                <element signature="e#1813#1850#0" expanded="true" />
-                <element signature="e#2001#2038#0" expanded="true" />
-                <element signature="e#2361#2392#0" expanded="true" />
-                <element signature="e#2597#3313#0" expanded="true" />
-                <element signature="e#2948#3279#0" expanded="true" />
-                <element signature="e#3260#3261#0" expanded="true" />
-                <element signature="e#3302#3303#0" expanded="true" />
-                <element signature="e#3636#3672#0" expanded="true" />
-                <element signature="e#4310#5740#0" expanded="true" />
-                <element signature="e#4595#4626#0" expanded="true" />
-                <element signature="e#5618#5656#0" expanded="true" />
-                <element signature="e#5733#5734#0" expanded="true" />
-                <element signature="e#6536#6574#0" expanded="true" />
-                <element signature="e#6919#6955#0" expanded="true" />
-                <element signature="e#7146#7184#0" expanded="true" />
-                <element signature="e#7223#7261#0" expanded="true" />
-              </folding>
+            <state line="66" column="16" selection-start="2747" selection-end="2747" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectThread.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ConnectThread.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/ConnectThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="27" selection-start="946" selection-end="946" vertical-scroll-proportion="3.9230769">
+            <state line="65" column="54" selection-start="2513" selection-end="2513" vertical-scroll-proportion="0.7782546">
               <folding />
             </state>
           </provider>
@@ -173,8 +152,8 @@
         <option value="$PROJECT_DIR$/Bluetooth/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/Bluetooth/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/Bluetooth/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/ConnectThread.java" />
         <option value="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java" />
+        <option value="$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/ConnectThread.java" />
       </list>
     </option>
   </component>
@@ -390,15 +369,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="292" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="292" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="296" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../CarInspection" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="293" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="967" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="292" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="285" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -415,7 +394,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="3435C296292200EC" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="4df19e424d1a5f95" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -573,7 +552,8 @@
       <workItem from="1369212965524" duration="640000" />
       <workItem from="1369213618034" duration="125000" />
       <workItem from="1369280105122" duration="19855000" />
-      <workItem from="1369620261526" duration="10845000" />
+      <workItem from="1369620261526" duration="14477000" />
+      <workItem from="1369705117150" duration="1839000" />
     </task>
     <task id="LOCAL-00001" summary="First ever commit for Bluetooth.&#10;-Enable BT when needed&#10;-List for paired devices">
       <created>1369119668914</created>
@@ -599,11 +579,15 @@
       <created>1369298282990</created>
       <updated>1369298282990</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Pairing is working">
+      <created>1369634662411</created>
+      <updated>1369634662411</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53332000" />
+    <option name="totallyTimeSpent" value="58803000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -629,8 +613,6 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22838847" sideWeight="0.79757977" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.79757977" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3091309" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -646,7 +628,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.79757977" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20242023" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22838847" sideWeight="0.79757977" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.79757977" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2801494" sideWeight="0.78547853" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -697,7 +681,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the first Thread version. Not tested yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pairing is working" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -719,6 +703,7 @@
     <MESSAGE value="Support to disable button when not available.&#10;When multiple BT devices are detected, they will be display in the liste (previously, only one was shown)" />
     <MESSAGE value="Not perfect but allowing pairing with other BT devices" />
     <MESSAGE value="Added the first Thread version. Not tested yet" />
+    <MESSAGE value="Pairing is working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -732,13 +717,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -796,19 +781,17 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/java/lang/Runnable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="176" selection-end="176" vertical-scroll-proportion="0.11525424">
-          <folding />
-        </state>
+        <state line="7" column="9" selection-start="176" selection-end="176" vertical-scroll-proportion="0.11525424" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/AndroidManifest.xml">
@@ -820,33 +803,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/ConnectThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="27" selection-start="946" selection-end="946" vertical-scroll-proportion="3.9230769">
+        <state line="65" column="54" selection-start="2513" selection-end="2513" vertical-scroll-proportion="0.7782546">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bluetooth/src/main/java/net/metabaron/bluetooth/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="15" selection-start="5389" selection-end="5389" vertical-scroll-proportion="0.45468053">
-          <folding>
-            <element signature="e#1677#1716#0" expanded="true" />
-            <element signature="e#1813#1850#0" expanded="true" />
-            <element signature="e#2001#2038#0" expanded="true" />
-            <element signature="e#2361#2392#0" expanded="true" />
-            <element signature="e#2597#3313#0" expanded="true" />
-            <element signature="e#2948#3279#0" expanded="true" />
-            <element signature="e#3260#3261#0" expanded="true" />
-            <element signature="e#3302#3303#0" expanded="true" />
-            <element signature="e#3636#3672#0" expanded="true" />
-            <element signature="e#4310#5740#0" expanded="true" />
-            <element signature="e#4595#4626#0" expanded="true" />
-            <element signature="e#5618#5656#0" expanded="true" />
-            <element signature="e#5733#5734#0" expanded="true" />
-            <element signature="e#6536#6574#0" expanded="true" />
-            <element signature="e#6919#6955#0" expanded="true" />
-            <element signature="e#7146#7184#0" expanded="true" />
-            <element signature="e#7223#7261#0" expanded="true" />
-          </folding>
+        <state line="66" column="16" selection-start="2747" selection-end="2747" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
